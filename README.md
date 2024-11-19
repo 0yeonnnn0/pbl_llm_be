@@ -36,8 +36,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+<br>
+
 ### 2. start code
 
 ```
 uvicorn app.main:app --reload
 ```
+
+<br>
+now you can connect at
+
+> http://127.0.0.1:8000/docs !

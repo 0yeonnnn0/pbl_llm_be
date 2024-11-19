@@ -1,0 +1,103 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Static files
+static/
+media/
+
+# FastAPI-specific
+# Uvicorn log files
+*.log
+
+# Database
+*.sqlite3
+*.db
+*.sqlite3-journal
+db.sqlite3
+db.sqlite3-journal
+
+# dotenv
+.env
+.env.*
+
+# Alembic migrations
+migrations/
+
+# Cache and temporary files
+*.pid
+*.log
+*.tmp
+*.bak
+*.swp
+*.lock
+
+# Local settings
+settings_local.py

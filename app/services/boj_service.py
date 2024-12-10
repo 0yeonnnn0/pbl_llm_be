@@ -18,6 +18,8 @@ async def fetch_problem_details(problem_id: int) -> dict:
     """
     solved.ac API에 요청을 보내 문제 정보를 가져옴
     """
+    print(f"Fetching problem details for ID: {problem_id}")
+    print(f"API_BASE_URL: {API_BASE_URL}")
     params = {"problemId": problem_id}  # 쿼리 파라미터 설정
     headers = {
         "User-Agent": "FastAPI Client",  # 요청 차단 방지

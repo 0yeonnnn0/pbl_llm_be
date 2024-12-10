@@ -10,4 +10,4 @@ app.include_router(router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to FastAPI Crawler!"}
+    return {"message": "Welcome to FastAPI!"}

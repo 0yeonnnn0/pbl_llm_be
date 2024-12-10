@@ -1,5 +1,4 @@
 # 안쓰는 파일
-
 from fastapi import HTTPException
 from app.services.crawler.parser import parse_html_BOJ
 from app.services.openai_service import problem_analysis
@@ -7,12 +6,13 @@ from app.services.openai_service import problem_analysis
 
 # 문제 받아오기 및 OpenAI API 요청 처리
 async def process_problem(html: dict):
+    print(f"🥕🥕🥕 문제 텍스트 추출 중 🥕🥕🥕")
     # 문제 텍스트 추출
     data = parse_html_BOJ(html)
-
+    print(f"🥕🥕🥕 문제 텍스트 추출 완료 🥕🥕🥕: {data}")
     # OpenAI API 요청
     analysis = await problem_analysis(data)
-    print(analysis)
+    print(f"🥕🥕🥕 OpenAI API 요청 완료 🥕🥕🥕: {analysis}")
 
     return analysis
 

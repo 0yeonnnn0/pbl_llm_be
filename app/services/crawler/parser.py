@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 def parse_html_BOJ(html: str) -> dict:
     soup = BeautifulSoup(html, "html.parser")
+    print(f"🥕🥕🥕 문제 HTML 파싱 완료 🥕🥕🥕: {soup}")
 
     # 예시: 제목과 메타 설명 추출
     title = soup.title.string if soup.title else "No Title"

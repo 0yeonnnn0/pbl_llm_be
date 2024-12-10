@@ -34,7 +34,7 @@ async def problem_analysis(question: str) -> dict:
         "model": "gpt-4",
         "messages": messages,
         "max_tokens": 5000,
-        "temperature": 0.7,
+        "temperature": 1.0,
     }
 
     async with httpx.AsyncClient(timeout=100) as client:
